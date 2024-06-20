@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+/*background-color: white;*/
+
+/*color: #333;*/
+
+font: 16px/28px Georgia, 'Times New Roman', Times, serif;
+
+/* Tomado de: http://leaverou.me/demos/css3-patterns.html */ background-color: #eee; /* Change this to change both stribe colors */
+
+background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+
+color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to (transparent)); /* Old webkit syntax */
+
+background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* New webkit syntax */
+
+background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* Firefox */
+
+background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* Opera */
+
+background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+
+transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* WC3 */
+
+background-size: 16px 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header,nav, section, article, footer {
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    float: center;
+    background-color: rgb(186, 139, 89);
+    overflow: hidden;
+}
+
+nav {
+    width: 15%;
+    float: left;
+    background-color: rgb(163, 163, 207);
+    margin-left: auto;
+
+}
+
+section {
+    height: 400spx;
+    width: 65%;
+    float: left;
+    background-color: rgb(163, 163, 207);
+    overflow: hidden;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    float: left;
+    background-color: rgb(186, 139, 89);
+    overflow: hidden;
+}
+
+header, footer, article {
+    margin-bottom: 30px;
+}
+
+article {
+
+    width: 100%;
+    float: center;
+    background-color: rgb(186, 139, 89);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.contenedor {
+    margin-left: auto; margin-right: auto; width: 90%; height: 100%;
+
+overflow: hidden;
+
+background: rgba(204, 204, 204, .4);
+
+border-radius: 5px 5px 10px 10px;
+
+-webkit-box-shadow: 0px 0px 0px 1px rgba(206, 103, 184, 0.4), 0px 0px 15px rgba(205, 126, 198, 0.5); -moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5); box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+}
+
+header, nav, section, article, footer {
+    border-radius: 10px;
+    padding: 15px;
+    border: solid 4px black;
+    margin-top: 10px;
+    /*Para estanderizar las referencias de las cajas*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.relacion {
+    height: 390px;
+    width: 15%;
+    float: right;
+    overflow: hidden;
+    background-color: rgb(163, 163, 207);
+    border-radius: 5%;
+    border: solid 5px black; 
+    text-align: center;
+    
+    
+}
+
+h1,h2 {
+    font-family:'Droid Serif', sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+header h1 {
+    font: bold;
+    font-size: 40px;
+    margin: 7%;
+    float: left;
+
+}
+
+header img {
+    float: right;
+    height: 100%;
+    margin-right: 5%;
+    width: 20%;
+    height: 70px;
+
+    /*define el retrazo y la velocidad de cambios*/ -webkit-transition-delay: 0s;
+
+    -webkit-transition-duration: 2s;
+
+    -webkit-transition-property: all;
+}
+header img:hover{
+
+    /*se cambian tres propiedades*/ height: 120%; margin-right: 15%;
+    
+    transform:rotate(30deg);
+    
+    -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); }
+
+footer img {
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+    width: 100%;
+
+}
+
+p {
+    font-family:'Droid Serif', sans-serif;
+}
+
+li a {
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    padding: 10% 20%;
+    color:rgb(150, 56, 100);
+    margin-top: 7px;
+    width: 60%;
+    text-decoration: none;
+
+    background: -moz-linear-gradient(center top, #c882ce 0%, #ab71be 100%) repeat scroll 0 Ø transparent;
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #be76c4),
+
+color-stop(100%,#c2a34e));
+
+    /*sombreados*/
+
+    text-shadow: 1px 1px 1px #6d1a35;
+
+    -moz-box-shadow: 0px 6px 0 #787582; -webkit-box-shadow: 0px 6px 0 #736f92;
+    margin: 5px;
+}
+
+li a:hover {
+    /*efecto de movimiento*/ position:relative; top: 3px;
+
+/*efecto de undimiento*/
+
+-moz-box-shadow: 0px 3px 0 #336666; -webkit-box-shadow: 0px 3px 0 #336666;
+
+/*invertir degradado*/
+
+background: -moz-linear-gradient(center top, #009966 0%, #99ffcc 100%) repeat scroll 0 0 transparent;
+
+background: -webkit-gradient(linear, left top, left bottom,)
+
+color-stop(0%, #009966), color-stop(100%,#99ffcc)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
